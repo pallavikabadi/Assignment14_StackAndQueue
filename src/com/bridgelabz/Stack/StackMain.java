@@ -1,4 +1,4 @@
-package com.bridgelabz;
+package com.bridgelabz.Stack;
 
 public class StackMain {
     public static void main(String[] args) {
@@ -11,5 +11,13 @@ public class StackMain {
         stack.push(30);
         stack.push(56);
         stack.print();
+
+        System.out.println();
+        while(!stack.isEmpty()){
+            System.out.println(stack.peek());
+            stack.pop();
+            stack.print();
+        }
+
     }
 }
